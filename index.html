@@ -5,16 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/icons/logo.svg" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
-    <script defer src="/main.js"></script>
+    <script defer src="/script.js"></script>
     <title>Domenico Vernon Weddings</title>
   </head>
   <body>
-    <header>
-      <a href="#" class="brand">
-        <svg width="32" height="44" viewBox="0 0 32 44">
-          <use href="/icons/logo.svg#logo" />
-        </svg>
-      </a>
+    <header class="top-header">
+      <nav class="top-nav">
+        <a href="#" aria-label="Domenico Vernon">
+          <svg width="32" height="44" aria-hidden="true">
+            <use href="/icons/logo.svg#logo" />
+          </svg>
+        </a>
+        <div class="drawer">
+          <button
+            type="button"
+            title="Abrir Menu"
+            aria-controls="drawer-mobile"
+            aria-expanded="false"
+            aria-label="Abrir Menu"
+            data-open="false"
+            class="drawer-toggle icon-button"
+          >
+            <svg aria-hidden="true" class="icon">
+              <use class="drawer-toggle-icon" href="/icons/menu.svg#menu" />
+            </svg>
+          </button>
+          <div data-open="false" class="drawer-backdrop">
+            <div data-open="false" class="drawer-content">
+              <ul class="mobile-navlist">
+                <li><a href="#">Browser</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="desktop-nav">
+          <ul class="desktop-links">
+            <li><a href="#">Browser</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <ul class="desktop-icon-links">
+            <a
+              href="#"
+              aria-label="Link para o nosso Instagram"
+              class="icon-button"
+            >
+              <svg aria-hidden="true" class="icon">
+                <use href="/icons/facebook.svg#facebook" /></svg></a
+            ><a href="#" class="icon-button">
+              <svg aria-hidden="true" class="icon">
+                <use href="/icons/instagram.svg#instagram" /></svg></a
+            ><a href="#" class="icon-button">
+              <svg aria-hidden="true" class="icon">
+                <use href="/icons/twitter.svg#twitter" />
+              </svg>
+            </a>
+          </ul>
+        </div>
+      </nav>
     </header>
+    <main class="hero"></main>
+    <main class="hero"></main>
+    <main class="hero"></main>
   </body>
 </html>
