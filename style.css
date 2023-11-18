@@ -377,9 +377,9 @@ a {
 }
 
 .featured-content img {
+  transform: translate3d(0, 0, 1px);
   max-width: 22.5rem;
   object-fit: cover;
-  transform: translate3d(0, 0, 1px);
 }
 
 .featured-subcontent {
