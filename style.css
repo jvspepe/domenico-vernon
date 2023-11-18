@@ -378,6 +378,8 @@ a {
 
 .featured-content img {
   max-width: 22.5rem;
+  object-fit: cover;
+  transform: translate3d(0, 0, 1px);
 }
 
 .featured-subcontent {
