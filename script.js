@@ -1,8 +1,12 @@
+const contactForm = document.querySelector(".contact-form");
 const drawer = document.querySelector(".drawer");
 const drawerToggle = drawer.querySelector(".drawer-toggle");
-
 const drawerBackdrop = drawer.querySelector(".drawer-backdrop");
 const drawerContent = drawer.querySelector(".drawer-content");
+
+contactForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+});
 
 function handleDrawerToggle() {
   const isOpen = drawerContent.dataset.open === "false";

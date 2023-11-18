@@ -99,6 +99,23 @@ a {
 
 /* UI */
 
+.button {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+  padding: 0.5rem 2rem;
+
+  color: var(--white);
+  text-align: center;
+
+  background-color: var(--primary-500);
+  border: none;
+  border-radius: 0.5rem;
+}
+
 .button.vertical {
   flex-direction: column;
 }
@@ -169,6 +186,23 @@ a {
 
 .icon-button[data-open="true"] {
   color: var(--neutral-500);
+}
+
+.input {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  padding: 0.5rem 1rem;
+
+  background-color: var(--white);
+  border: 1px solid var(--neutral-200);
+  border-radius: 0.5rem;
+}
+
+.input::placeholder {
+  color: var(--neutral-400);
+  opacity: 1;
 }
 
 .link {
@@ -679,6 +713,108 @@ a {
   color: var(--white);
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 3rem 1rem;
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.contact-header h6 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-500);
+}
+
+.contact-header p {
+  color: var(--primary-300);
+}
+
+.contact-content {
+  display: grid;
+  gap: 3rem;
+  justify-content: space-between;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-form-header {
+  font-family: var(--font-body);
+  font-weight: 500;
+  color: var(--primary-500);
+}
+
+.contact-form-information {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.contact-form-about {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.contact-location {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-location img {
+  border-radius: 0.5rem;
+}
+
+.contact-location-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-location-header {
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--primary-500);
+}
+
+.contact-location p {
+  color: var(--primary-400);
+}
+
+.contact-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-socials-header {
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--primary-500);
+}
+
+.contact-socials-buttons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.contact-socials-buttons .icon-button {
+  color: var(--primary-400);
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 641px) {
@@ -756,6 +892,12 @@ a {
 
   .locations-content {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .contact-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
   }
 }
 
