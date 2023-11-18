@@ -159,10 +159,9 @@ a {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  align-items: end;
 
   height: 100dvh;
-  padding: 2rem;
+  padding: 0.5rem;
 
   visibility: hidden;
   background-color: var(--white);
@@ -288,10 +287,27 @@ a {
 .mobile-navlist {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 0.5rem;
+  /* align-items: center; */
   justify-content: center;
 
   height: 100%;
+}
+
+.mobile-navlist li {
+  display: flex;
+  align-items: center;
+}
+
+.drawer-link {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 300ms;
+}
+
+.drawer-link:hover {
+  background-color: var(--neutral-200);
 }
 
 .hero {

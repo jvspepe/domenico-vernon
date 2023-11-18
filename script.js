@@ -3,6 +3,7 @@ const drawer = document.querySelector(".drawer");
 const drawerToggle = drawer.querySelector(".drawer-toggle");
 const drawerBackdrop = drawer.querySelector(".drawer-backdrop");
 const drawerContent = drawer.querySelector(".drawer-content");
+const drawerLinks = drawer.querySelectorAll("[data-link]");
 
 contactForm.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -33,3 +34,6 @@ function handleDrawerToggle() {
 }
 
 drawerToggle.addEventListener("click", handleDrawerToggle);
+drawerLinks.forEach((link) =>
+  link.addEventListener("click", handleDrawerToggle),
+);
