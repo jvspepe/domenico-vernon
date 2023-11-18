@@ -815,6 +815,32 @@ a {
   color: var(--primary-400);
 }
 
+.footer-background {
+  background-color: var(--neutral-500);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem 1rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  font-family: var(--font-body);
+  color: var(--neutral-400);
+}
+
+.footer-socials {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 641px) {
@@ -870,6 +896,16 @@ a {
   .portfolio-display {
     grid-auto-rows: 1fr;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-links {
+    flex-direction: row;
   }
 }
 
