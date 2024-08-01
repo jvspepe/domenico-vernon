@@ -1,13 +1,8 @@
-const contactForm = document.querySelector(".contact-form");
-const drawer = document.querySelector(".drawer");
-const drawerToggle = drawer.querySelector(".drawer-toggle");
-const drawerBackdrop = drawer.querySelector(".drawer-backdrop");
-const drawerContent = drawer.querySelector(".drawer-content");
-const drawerLinks = drawer.querySelectorAll("[data-link]");
-
-contactForm.addEventListener("submit", (event) => {
-  event.preventDefault();
-});
+const drawerToggle = document.querySelector(".drawer-toggle");
+const drawerBackdrop = document.querySelector(".drawer-backdrop");
+const drawerContent = document.querySelector(".drawer-content");
+const drawerLinks = document.querySelectorAll("[data-link]");
+const header = document.querySelector(".header");
 
 function handleDrawerToggle() {
   const isOpen = drawerContent.dataset.open === "false";
@@ -34,6 +29,13 @@ function handleDrawerToggle() {
 }
 
 drawerToggle.addEventListener("click", handleDrawerToggle);
+
 drawerLinks.forEach((link) =>
-  link.addEventListener("click", handleDrawerToggle),
+  link.addEventListener("click", handleDrawerToggle)
 );
+
+drawerBackdrop.addEventListener("click", (event) => {
+  if (!drawerContent.contains(event.target)) {
+    handleDrawerToggle();
+  }
+});

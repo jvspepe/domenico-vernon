@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/icons/logo.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <script type="module" src="/script.js"></script>
-    <title>Domenico Vernon Weddings</title>
+    <link rel="stylesheet" href="/src/style.scss" />
+    <script type="module" src="/src/script.js"></script>
+    <title>Domenico Vernon</title>
   </head>
   <body>
-    <header class="top-header">
-      <nav class="top-nav">
+    <div aria-hidden="true" class="hero-background"></div>
+    <header class="header">
+      <nav class="nav container">
         <a href="#" aria-label="Domenico Vernon">
           <svg width="32" height="44" aria-hidden="true">
             <use href="/icons/logo.svg#logo" />
@@ -32,44 +33,76 @@
           </button>
           <div data-open="false" class="drawer-backdrop">
             <div data-open="false" class="drawer-content">
-              <ul class="mobile-navlist">
+              <ul class="nav-list">
                 <li>
-                  <a href="#locations" data-link="true" class="drawer-link"
-                    >Browse</a
-                  >
+                  <a
+                    href="#locations"
+                    data-i18n-key="nav.locations"
+                    data-link="true"
+                    class="nav-link"
+                  ></a>
                 </li>
                 <li>
-                  <a href="#services" data-link="true" class="drawer-link"
-                    >Services</a
-                  >
+                  <a
+                    href="#services"
+                    data-i18n-key="nav.services"
+                    data-link="true"
+                    class="nav-link"
+                  ></a>
                 </li>
                 <li>
-                  <a href="#testimonials" data-link="true" class="drawer-link"
-                    >Testimonials</a
-                  >
+                  <a
+                    href="#testimonials"
+                    data-i18n-key="nav.testimonials"
+                    data-link="true"
+                    class="nav-link"
+                  ></a>
                 </li>
                 <li>
-                  <a href="#contact" data-link="true" class="drawer-link"
-                    >Contact Us</a
-                  >
+                  <a
+                    href="#contact"
+                    data-i18n-key="nav.contact"
+                    data-link="true"
+                    class="nav-link"
+                  ></a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
         <div class="desktop-nav">
-          <ul class="desktop-links">
-            <li><a href="#locations">Browse</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+          <ul class="desktop-nav-list">
+            <li>
+              <a
+                href="#locations"
+                data-i18n-key="nav.locations"
+                class="desktop-nav-link"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#services"
+                data-i18n-key="nav.services"
+                class="desktop-nav-link"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#testimonials"
+                data-i18n-key="nav.testimonials"
+                class="desktop-nav-link"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                data-i18n-key="nav.contact"
+                class="desktop-nav-link"
+              ></a>
+            </li>
           </ul>
-          <ul class="desktop-icon-links">
-            <a
-              href="#"
-              aria-label="Link para o nosso Instagram"
-              class="icon-button"
-            >
+          <ul class="desktop-nav-icon-links">
+            <a href="#" class="icon">
               <svg aria-hidden="true" class="icon">
                 <use href="/icons/facebook.svg#facebook" /></svg></a
             ><a href="#" class="icon-button">
@@ -84,25 +117,22 @@
         </div>
       </nav>
     </header>
-    <div class="hero-background">
-      <main id="hero" class="hero">
-        <h1 class="heading">Discover your perfect Italian wedding venue</h1>
-        <p>
-          Sagittis adipiscing posuere id adipiscing aliquam posuere. Aliquet
-          faucibus duis accumsan aliquet tempor diam dignissim suscipit. Nibh
-          urna ut diam fames.
-        </p>
-        <a href="#locations" class="icon-button secondary">
-          <svg aria-hidden="true" class="icon">
-            <use href="/icons/arrow-down.svg#arrow-down" />
-          </svg>
-        </a>
-      </main>
-    </div>
-    <section id="locations" class="container locations">
+    <main id="hero" class="hero container">
+      <h1 data-i18n-key="hero.header" class="hero-header"></h1>
+      <p data-i18n-key="hero.content" class="hero-content"></p>
+      <a href="#locations" class="icon-button secondary">
+        <svg aria-hidden="true" class="icon">
+          <use href="/icons/arrow-down.svg#arrow-down" />
+        </svg>
+      </a>
+    </main>
+    <section id="locations" class="locations container">
       <div class="locations-header">
-        <h2 class="heading">Locations</h2>
-        <p>That you will remember forever</p>
+        <h2 data-i18n-key="locations.header" class="heading"></h2>
+        <p
+          data-i18n-key="locations.subheader"
+          class="locations-header-subheading"
+        ></p>
       </div>
       <div class="locations-content">
         <div class="location-card">
@@ -139,131 +169,145 @@
               <use href="/icons/arrow-top-right.svg#arrow-top-right" />
             </svg>
           </a>
-          <p>Browser</p>
+          <p data-i18n-key="locations.browse"></p>
         </div>
       </div>
     </section>
-    <div class="container">
-      <section id="featuerd" class="featured">
-        <h3 class="featured-header">Featured Venues</h3>
-        <div class="featured-content">
-          <img src="/images/featured-card-image-1.jpg" alt="" />
-          <div class="featured-section">
-            <div class="featured-subcontent">
-              <div class="featured-counter">
-                <span>1</span>
-                <span>/10</span>
-              </div>
-              <div class="featured-description">
-                <div class="featured-subheader">
-                  <h4 class="heading">Villa Balbianello</h4>
-                  <span>Lake Como</span>
-                </div>
-                <p>
-                  The whole complex consists of two residential buildings, a
-                  church, and a portico (known as Loggia Durini) that can host
-                  weddings and events in a truly unique setting.<br /><br />But
-                  the special feature of Villa Balbianello is above all the vast
-                  garden that surrounds the dwellings, with magnificent holm
-                  oaks pruned into an umbrella shape so as to offer a splendid
-                  view of Lake Como from inside the... View more
-                </p>
-              </div>
+    <section id="featured" class="featured container">
+      <h3 class="featured-header" data-i18n-key="featured.header"></h3>
+      <div class="featured-content">
+        <img src="/images/featured-card-image-1.jpg" alt="" />
+        <div class="featured-section">
+          <div class="featured-subcontent">
+            <div class="featured-counter">
+              <span>1</span>
+              <span>/10</span>
             </div>
-            <div class="featured-buttons">
-              <button aria-label="Previous card" class="icon-button">
-                <svg aria-hidden="true" class="icon">
-                  <use href="/icons/arrow-left.svg#arrow-left" />
-                </svg>
-              </button>
-              <button aria-label="Next card" class="icon-button">
-                <svg aria-hidden="true" class="icon">
-                  <use href="/icons/arrow-right.svg#arrow-right" />
-                </svg>
-              </button>
+            <div class="featured-description">
+              <div class="featured-subheader">
+                <h4 data-i18n-key="featured.card.heading" class="heading"></h4>
+                <span data-i18n-key="featured.card.subheading"></span>
+              </div>
+              <p data-i18n-key="featured.card.content"></p>
             </div>
           </div>
+          <div class="featured-buttons">
+            <button aria-label="Previous card" class="icon-button">
+              <svg aria-hidden="true" class="icon">
+                <use href="/icons/arrow-left.svg#arrow-left" />
+              </svg>
+            </button>
+            <button aria-label="Next card" class="icon-button">
+              <svg aria-hidden="true" class="icon">
+                <use href="/icons/arrow-right.svg#arrow-right" />
+              </svg>
+            </button>
+          </div>
         </div>
-      </section>
-    </div>
-    <div class="container services-background">
+      </div>
+    </section>
+    <div class="services-background container">
       <section id="services" class="services">
         <div class="services-header">
-          <h4 class="services-header-title">Services</h4>
-          <p class="services-header-details">
-            to plan and orchestrate your special occasion
-          </p>
+          <h4
+            data-i18n-key="services.heading"
+            class="services-header-title"
+          ></h4>
+          <p
+            data-i18n-key="services.subheading"
+            class="services-header-details"
+          ></p>
         </div>
         <div class="services-display">
           <article class="service-card">
-            <img src="/images/service-img-1.jpg" alt="" />
-            <h5 class="service-card-title">Photography</h5>
+            <img
+              src="/images/service-img-1.jpg"
+              alt=""
+              class="service-card-image"
+            />
+            <h5
+              data-i18n-key="services.service1"
+              class="service-card-title"
+            ></h5>
           </article>
           <article class="service-card">
-            <img src="/images/service-img-2.jpg" alt="" />
-            <h5 class="service-card-title">Ceremony</h5>
+            <img
+              src="/images/service-img-2.jpg"
+              alt=""
+              class="service-card-image"
+            />
+            <h5
+              data-i18n-key="services.service2"
+              class="service-card-title"
+            ></h5>
           </article>
           <article class="service-card">
-            <img src="/images/service-img-3.jpg" alt="" />
-            <h5 class="service-card-title">Wedding Design</h5>
+            <img
+              src="/images/service-img-3.jpg"
+              alt=""
+              class="service-card-image"
+            />
+            <h5
+              data-i18n-key="services.service3"
+              class="service-card-title"
+            ></h5>
           </article>
         </div>
       </section>
     </div>
-    <section class="container portfolio">
+    <section class="portfolio container">
       <div class="portfolio-header">
-        <h5>Our portfolios</h5>
+        <h5 data-i18n-key="portfolio.heading"></h5>
       </div>
       <div class="portfolio-display">
         <article class="portfolio-card">
           <img src="/images/portfolio-image-1.jpg" alt="" />
           <div class="portfolio-card-header">
-            <h6>The wedding of</h6>
+            <h6 data-i18n-key="portfolio.detail"></h6>
             <p>Joy & Jordan</p>
           </div>
         </article>
         <article class="portfolio-card">
           <img src="/images/portfolio-image-2.jpg" alt="" />
           <div class="portfolio-card-header">
-            <h6>The wedding of</h6>
+            <h6 data-i18n-key="portfolio.detail"></h6>
             <p>Dianne & Michael</p>
           </div>
         </article>
         <article class="portfolio-card">
           <img src="/images/portfolio-image-3.jpg" alt="" />
           <div class="portfolio-card-header">
-            <h6>The wedding of</h6>
+            <h6 data-i18n-key="portfolio.detail"></h6>
             <p>Gabrielle & Simon</p>
           </div>
         </article>
         <article class="portfolio-card">
           <img src="/images/portfolio-image-4.jpg" alt="" />
           <div class="portfolio-card-header">
-            <h6>The wedding of</h6>
+            <h6 data-i18n-key="portfolio.detail"></h6>
             <p>Zee & Andrian</p>
           </div>
         </article>
       </div>
     </section>
     <div class="testimonials-background">
-      <section id="testimonials" class="container testimonials">
+      <section id="testimonials" class="testimonials container">
         <div class="testimonials-header">
-          <h6>Testimonials</h6>
-          <p>from happy, delighted couples</p>
+          <h6 data-i18n-key="testimonials.heading"></h6>
+          <p data-i18n-key="testimonials.subheading"></p>
         </div>
         <article class="testimonial-card">
           <div class="testimonial-card-content">
             <span class="testimonial-card-quote">&#8220;</span>
             <p>
-              Lorem ipsum sit ac suspendisse adipiscing eget aliquam fermentum
-              rutrum tempus aenean. Suspendisse nascetur vulputate viverra
-              varius eu ullamcorper. Cursus pellentesque erat eget eget
-              ullamcorper id in. Nullam scelerisque varius viverra augue quis.
-              Laoreet eget curabitur vitae sed at facilisis purus convallis
-              imperdiet.<br /><br />
-              Penatibus auctor diam vivamus amet a vehicula ultrices. Volutpat
-              arcu in amet praesent nisl mattis etiam cras orci. Ut urna
-              elementum sapien orci lacus!
+              Nosso casamento foi simplesmente mágico graças à incrível equipe
+              desta empresa. Desde a escolha do local até os mínimos detalhes da
+              decoração, cada aspecto foi cuidadosamente planejado e executado.
+              Eles transformaram nosso sonho em realidade e superaram todas as
+              nossas expectativas. A celebração na Itália foi inesquecível, e
+              nossos convidados ainda falam sobre o quão maravilhoso foi o
+              evento. Não poderíamos estar mais felizes com o serviço impecável
+              que recebemos!
             </p>
             <span class="testimonial-card-quote">&#8221;</span>
           </div>
@@ -286,20 +330,20 @@
         </article>
       </section>
     </div>
-    <section id="contact" class="container contact">
+    <section id="contact" class="contact container">
       <div class="contact-header">
-        <h6>Contact us</h6>
-        <p>we are excited to get planning!</p>
+        <h6 data-i18n-key="contact.heading"></h6>
+        <p data-i18n-key="contact.subheading"></p>
       </div>
       <div class="contact-content">
         <form novalidate class="contact-form">
           <div class="contact-form-information">
-            <h3 class="contact-form-header">Contact Information</h3>
+            <h3 class="contact-form-header">Informação para contato</h3>
             <input
               type="text"
               name="contact-name"
               id="contact-name"
-              placeholder="Name"
+              placeholder="Nome"
               class="input"
             />
             <input
@@ -313,7 +357,7 @@
               type="tel"
               name="contact-phone"
               id="contact-phone"
-              placeholder="Phone no."
+              placeholder="Telefone"
               class="input"
             />
           </div>
@@ -323,51 +367,48 @@
               type="text"
               name="partner-1"
               id="partner-1"
-              placeholder="Partner 1"
+              placeholder="Parceiro(a) 1"
               class="input"
             />
             <input
               type="text"
               name="partner-2"
               id="partner-2"
-              placeholder="Partner 2"
+              placeholder="Parceiro(a) 2"
               class="input"
             />
             <input
               type="text"
               name="est-month-year"
               id="est-month-year"
-              placeholder="MM/YY"
+              placeholder="MM/AA"
               class="input"
             />
             <input
               type="number"
               name="guest-amount"
               id="guest-amount"
-              placeholder="Expected number of guests"
+              placeholder="Número esperado de convidados"
               class="input"
             />
             <textarea
               name="extra-details"
               id="extra-details"
               rows="10"
-              placeholder="Tell us anything more that can help!"
+              placeholder="Nos conte tudo que possa ajudar!"
               class="input"
             ></textarea>
           </div>
-          <button type="submit" class="button">Send</button>
+          <button type="submit" class="button">Enviar</button>
         </form>
         <div class="contact-location">
           <img src="/images/map.png" alt="" />
           <div class="contact-location-details">
-            <h3 class="contact-location-header">Head Office</h3>
-            <p>
-              Via Roma, 123<br />20121 Milano (MI)<br />Italy<br />Phone: +39
-              (0) 322 221211<br />Mobile: +39 328 2211212
-            </p>
+            <h3 class="contact-location-header">Escritório Principal</h3>
+            <p>Via Roma, 123<br />20121 Milano (MI)<br />Itália<br /></p>
           </div>
           <div class="contact-socials">
-            <h4 class="contact-socials-header">Follow Us</h4>
+            <h4 class="contact-socials-header">Siga nas Redes Sociais</h4>
             <div class="contact-socials-buttons">
               <a href="#" class="icon-button">
                 <svg class="icon">
@@ -397,10 +438,10 @@
           </svg>
         </a>
         <ul class="footer-links">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Termos de Serviço</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+          <li><a href="#">Perguntas Frequentes</a></li>
         </ul>
         <div class="footer-socials">
           <a href="#" class="icon-button">

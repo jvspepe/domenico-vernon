@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "locations": "Espaços",
+    "services": "Serviços",
+    "testimonials": "Testemunhos",
+    "contact": "Entre em Contato"
+  },
+  "hero": {
+    "header": "Encontre o local perfeito para seu casamento na Itália",
+    "content": "Oferecemos planejamento completo, desde a escolha do cenário perfeito até a decoração deslumbrante, garantindo que cada detalhe do seu grande dia seja inesquecível."
+  },
+  "locations": {
+    "header": "Espaços",
+    "subheader": "que nunca vai esquecer",
+    "browse": "Ver mais"
+  },
+  "featured": {
+    "header": "Espaços em Destaque",
+    "card": {
+      "heading": "Villa Balbianello",
+      "subheading": "Lago de Como",
+      "content": "Todo o complexo é composto por dois edifícios residenciais, uma igreja e um pórtico (conhecido como Loggia Durini) que pode hospedar casamentos e eventos em um ambiente verdadeiramente único.\nMas a característica especial da Villa Balbianello é, acima de tudo, o vasto jardim que circunda as residências, com magníficos carvalhos verdes podados em forma de guarda-chuva para oferecer uma esplêndida vista do Lago de Como de dentro da... Ver mais"
+    }
+  },
+  "services": {
+    "heading": "Serviços",
+    "subheading": "para planejar e orquestrar sua ocasião especial",
+    "service1": "Fotografia",
+    "service2": "Cerimônia",
+    "service3": "Design"
+  },
+  "portfolio": {
+    "heading": "Nossos portfólios",
+    "detail": "O casamento de"
+  },
+  "testimonials": {
+    "heading": "Avaliações",
+    "subheading": "de nossos felizes casais"
+  },
+  "contact": {
+    "heading": "Entre em contato",
+    "subheading": "estamos excitados para planejar!"
+  }
+}

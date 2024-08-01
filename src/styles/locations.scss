@@ -1,0 +1,44 @@
+@import "./utils/variables";
+@import "./utils/breakpoints";
+
+.locations {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+
+  margin-bottom: 3rem;
+  padding: 0 $mobilePadding;
+
+  @include media("medium") {
+    padding: 0;
+  }
+
+  &-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+
+    text-align: center;
+
+    &-subheading {
+      color: var(--primary-300);
+    }
+  }
+
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 0.5rem;
+
+    @include media("medium") {
+      gap: 1rem;
+    }
+
+    @include media("large") {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

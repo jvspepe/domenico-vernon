@@ -1,0 +1,39 @@
+@import "./utils/variables";
+@import "./utils/breakpoints";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem $mobilePadding;
+
+  @include media("medium") {
+    padding: 3rem 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-background {
+    background-color: var(--neutral-500);
+  }
+
+  &-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    font-family: var(--font-body);
+    color: var(--neutral-400);
+
+    @include media("medium") {
+      flex-direction: row;
+    }
+  }
+
+  &-socials {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+}

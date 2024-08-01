@@ -1,0 +1,40 @@
+.button {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+  padding: 0.5rem 2rem;
+
+  color: var(--white);
+  text-align: center;
+
+  background-color: var(--primary-500);
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.button.vertical {
+  flex-direction: column;
+}
+
+.icon-button {
+  cursor: pointer;
+
+  padding: 0.25rem;
+
+  color: var(--white);
+
+  background-color: transparent;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.icon-button.secondary {
+  color: var(--primary-400);
+}
+
+.icon-button[data-open="true"] {
+  color: var(--neutral-500);
+}

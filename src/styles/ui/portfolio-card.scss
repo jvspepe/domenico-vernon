@@ -1,0 +1,51 @@
+.portfolio-card {
+  position: relative;
+
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+  border-radius: 0.5rem;
+
+  img {
+    transform: translate3d(0px, 0px, 0.1px);
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
+  &-header {
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    padding-bottom: 0.5rem;
+
+    color: var(--white);
+
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0)
+    );
+
+    h6 {
+      font-size: 0.75rem;
+      font-weight: normal;
+      color: var(--neutral-200);
+      text-transform: uppercase;
+    }
+
+    p {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--white);
+      text-align: center;
+    }
+  }
+}

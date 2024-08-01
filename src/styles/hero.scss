@@ -1,0 +1,51 @@
+@import "./utils/breakpoints";
+@import "./utils/variables";
+
+// HERO DONE
+.hero {
+  height: calc(100dvh - $headerHeight);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: $mobilePadding;
+
+  ::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 7.5%;
+    background-color: var(--white);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    z-index: 1;
+  }
+
+  @include media("medium") {
+    justify-content: center;
+    padding: 0;
+  }
+
+  &-header {
+    font-family: var(--font-heading);
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--primary-500);
+    text-align: center;
+
+    @include media("medium") {
+      font-size: 3.5rem;
+    }
+  }
+
+  &-content {
+    color: var(--primary-400);
+    text-align: center;
+
+    @include media("medium") {
+      width: 75%;
+    }
+  }
+}

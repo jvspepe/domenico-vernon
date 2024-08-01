@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "locations": "Browse",
+    "services": "Services",
+    "testimonials": "Testimonials",
+    "contact": "Contact Us"
+  },
+  "hero": {
+    "header": "Discover your perfect Italian wedding venue",
+    "content": "We offer comprehensive planning, from selecting the perfect setting to stunning decorations, ensuring every detail of your big day is unforgettable."
+  },
+  "locations": {
+    "header": "Locations",
+    "subheader": "that you will remember forever",
+    "browse": "Browse"
+  },
+  "featured": {
+    "header": "Featured Venues",
+    "card": {
+      "heading": "Villa Balbianello",
+      "subheading": "Lake Como",
+      "content": "The whole complex consists of two residential buildings, a church, and a portico (known as Loggia Durini) that can host weddings and events in a truly unique setting.\nBut the special feature of Villa Balbianello is above all the vast garden that surrounds the dwellings, with magnificent holm oaks  pruned into an umbrella shape so as to offer a splendid view of Lake Como from inside the... View more"
+    }
+  },
+  "services": {
+    "heading": "Services",
+    "subheading": "to plan and orchestrate your special occasion",
+    "service1": "Photography",
+    "service2": "Ceremony",
+    "service3": "Design"
+  },
+  "portfolio": {
+    "heading": "Our portfolios",
+    "detail": "The wedding of"
+  },
+  "testimonials": {
+    "heading": "Testimonials",
+    "subheading": "from happy, delighted couples"
+  },
+  "contact": {
+    "heading": "Contact Us",
+    "subheading": "we are excited to get planning!"
+  }
+}
