@@ -10,6 +10,8 @@ i18next
   .init({
     fallbackLng: "pt-BR",
     supportedLngs: ["pt-BR", "en-US"],
+    ns: ["translation", "common"],
+    defaultNS: "translation",
   })
   .then(() => {
     i18nKeys.forEach((element) => {

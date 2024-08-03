@@ -1,10 +1,4 @@
 {
-  "nav": {
-    "locations": "Espaços",
-    "services": "Serviços",
-    "testimonials": "Testemunhos",
-    "contact": "Entre em Contato"
-  },
   "hero": {
     "header": "Encontre o local perfeito para seu casamento na Itália",
     "content": "Oferecemos planejamento completo, desde a escolha do cenário perfeito até a decoração deslumbrante, garantindo que cada detalhe do seu grande dia seja inesquecível."
@@ -39,6 +33,8 @@
   },
   "contact": {
     "heading": "Entre em contato",
-    "subheading": "estamos excitados para planejar!"
+    "subheading": "estamos excitados para planejar!",
+    "form-header": "Informações para Contato",
+    "form-subheader": "Quem vai casar?"
   }
 }
